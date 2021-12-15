@@ -1,0 +1,11 @@
+*.o
+*.bin
+*.pyc
+meta*
+NOTE*
+RESULT*
+TOOL*
+.vscode/
+enable_ccr/*
+!enable_ccr/Makefile
+!enable_ccr/enable_ccr.c
