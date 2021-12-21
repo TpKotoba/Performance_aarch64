@@ -14,7 +14,7 @@
 #endif
 
 #ifndef ROUND
-#define ROUND  	256
+#define ROUND  	64
 #endif
 
 static int cmpfunc (const void * a, const void * b) {
