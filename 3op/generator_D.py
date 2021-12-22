@@ -8,7 +8,7 @@ def print_code(instructionA, instructionB, shape):
         r = ["v8", "v9", "v10", "v11"]
         shape = "."+shape
     elif(shape in ["2S", "4H", "8B"]):
-        r = ["d8", "d9", "d10", "d11"]
+        r = ["v8", "v9", "v10", "v11"]
         shape = "."+shape
     print(f'''#include "macros.i"
 
