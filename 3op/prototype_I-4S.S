@@ -15,7 +15,7 @@ target:
     push_all
 loop:
     
-    Repeat256  core, v19, v20, v21, v22, .4S
+    Repeat256  core, v8, v9, v10, v11, .4S
     
     subs    x0, x0, #1
     bge     loop
