@@ -3,16 +3,16 @@
 
 .macro push_all
 
-    sub sp, sp, #(16*9)
+    sub sp, sp, #(16*13)
     stp x19, x20, [sp, #16*0]
     stp x21, x22, [sp, #16*1]
     stp x23, x24, [sp, #16*2]
     stp x25, x26, [sp, #16*3]
     stp x27, x28, [sp, #16*4]
-    stp  v8,  v9, [sp, #16*5]
-    stp v10, v11, [sp, #16*6]
-    stp v12, v13, [sp, #16*7]
-    stp v14, v15, [sp, #16*8]
+    stp  q8,  q9, [sp, #16*5]
+    stp q10, q11, [sp, #16*7]
+    stp q12, q13, [sp, #16*9]
+    stp q14, q15, [sp, #16*11]
 
 .endm
 
@@ -23,11 +23,11 @@
     ldp x23, x24, [sp, #16*2]
     ldp x25, x26, [sp, #16*3]
     ldp x27, x28, [sp, #16*4]
-    ldp  v8,  v9, [sp, #16*5]
-    ldp v10, v11, [sp, #16*6]
-    ldp v12, v13, [sp, #16*7]
-    ldp v14, v15, [sp, #16*8]
-    add sp, sp, #(16*9)
+    ldp  q8,  q9, [sp, #16*5]
+    ldp q10, q11, [sp, #16*7]
+    ldp q12, q13, [sp, #16*9]
+    ldp q14, q15, [sp, #16*11]
+    add sp, sp, #(16*13)
 
 .endm
 
