@@ -9,10 +9,10 @@
     stp x23, x24, [sp, #16*2]
     stp x25, x26, [sp, #16*3]
     stp x27, x28, [sp, #16*4]
-    stp  d8,  d9, [sp, #16*5]
-    stp d10, d11, [sp, #16*6]
-    stp d12, d13, [sp, #16*7]
-    stp d14, d15, [sp, #16*8]
+    stp  v8,  v9, [sp, #16*5]
+    stp v10, v11, [sp, #16*6]
+    stp v12, v13, [sp, #16*7]
+    stp v14, v15, [sp, #16*8]
 
 .endm
 
@@ -23,10 +23,10 @@
     ldp x23, x24, [sp, #16*2]
     ldp x25, x26, [sp, #16*3]
     ldp x27, x28, [sp, #16*4]
-    ldp  d8,  d9, [sp, #16*5]
-    ldp d10, d11, [sp, #16*6]
-    ldp d12, d13, [sp, #16*7]
-    ldp d14, d15, [sp, #16*8]
+    ldp  v8,  v9, [sp, #16*5]
+    ldp v10, v11, [sp, #16*6]
+    ldp v12, v13, [sp, #16*7]
+    ldp v14, v15, [sp, #16*8]
     add sp, sp, #(16*9)
 
 .endm
