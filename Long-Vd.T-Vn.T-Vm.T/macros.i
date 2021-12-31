@@ -31,32 +31,32 @@
 
 .endm
 
-.macro Repeat4 macro, op0, op1, op2, op3, shape
-    \macro  \op0, \op1, \op2, \op3, \shape
-    \macro  \op0, \op1, \op2, \op3, \shape
-    \macro  \op0, \op1, \op2, \op3, \shape
-    \macro  \op0, \op1, \op2, \op3, \shape
+.macro Repeat4 macro, op0, op1, op2, op3, shape_Ta, shape_Tb
+    \macro  \op0, \op1, \op2, \op3, \shape_Ta, \shape_Tb
+    \macro  \op0, \op1, \op2, \op3, \shape_Ta, \shape_Tb
+    \macro  \op0, \op1, \op2, \op3, \shape_Ta, \shape_Tb
+    \macro  \op0, \op1, \op2, \op3, \shape_Ta, \shape_Tb
 .endm
 
-.macro Repeat16 macro, op0, op1, op2, op3, shape
-    Repeat4     \macro, \op0, \op1, \op2, \op3, \shape
-    Repeat4     \macro, \op0, \op1, \op2, \op3, \shape
-    Repeat4     \macro, \op0, \op1, \op2, \op3, \shape
-    Repeat4     \macro, \op0, \op1, \op2, \op3, \shape
+.macro Repeat16 macro, op0, op1, op2, op3, shape_Ta, shape_Tb
+    Repeat4     \macro, \op0, \op1, \op2, \op3, \shape_Ta, \shape_Tb
+    Repeat4     \macro, \op0, \op1, \op2, \op3, \shape_Ta, \shape_Tb
+    Repeat4     \macro, \op0, \op1, \op2, \op3, \shape_Ta, \shape_Tb
+    Repeat4     \macro, \op0, \op1, \op2, \op3, \shape_Ta, \shape_Tb
 .endm
 
-.macro Repeat64 macro, op0, op1, op2, op3, shape
-    Repeat16    \macro, \op0, \op1, \op2, \op3, \shape
-    Repeat16    \macro, \op0, \op1, \op2, \op3, \shape
-    Repeat16    \macro, \op0, \op1, \op2, \op3, \shape
-    Repeat16    \macro, \op0, \op1, \op2, \op3, \shape
+.macro Repeat64 macro, op0, op1, op2, op3, shape_Ta, shape_Tb
+    Repeat16    \macro, \op0, \op1, \op2, \op3, \shape_Ta, \shape_Tb
+    Repeat16    \macro, \op0, \op1, \op2, \op3, \shape_Ta, \shape_Tb
+    Repeat16    \macro, \op0, \op1, \op2, \op3, \shape_Ta, \shape_Tb
+    Repeat16    \macro, \op0, \op1, \op2, \op3, \shape_Ta, \shape_Tb
 .endm
 
-.macro Repeat256 macro, op0, op1, op2, op3, shape
-    Repeat64    \macro, \op0, \op1, \op2, \op3, \shape
-    Repeat64    \macro, \op0, \op1, \op2, \op3, \shape
-    Repeat64    \macro, \op0, \op1, \op2, \op3, \shape
-    Repeat64    \macro, \op0, \op1, \op2, \op3, \shape
+.macro Repeat256 macro, op0, op1, op2, op3, shape_Ta, shape_Tb
+    Repeat64    \macro, \op0, \op1, \op2, \op3, \shape_Ta, \shape_Tb
+    Repeat64    \macro, \op0, \op1, \op2, \op3, \shape_Ta, \shape_Tb
+    Repeat64    \macro, \op0, \op1, \op2, \op3, \shape_Ta, \shape_Tb
+    Repeat64    \macro, \op0, \op1, \op2, \op3, \shape_Ta, \shape_Tb
 .endm
 
 #endif
