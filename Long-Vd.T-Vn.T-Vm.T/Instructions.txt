@@ -6,10 +6,6 @@ SADDL  Vd.T1, Vn.T2, Vm.T2
 UADDL  Vd.T1, Vn.T2, Vm.T2
 SSUBL  Vd.T1, Vn.T2, Vm.T2
 USUBL  Vd.T1, Vn.T2, Vm.T2
-SADDW  Vd.T1, Vn.T2, Vm.T2
-UADDW  Vd.T1, Vn.T2, Vm.T2
-SSUBW  Vd.T1, Vn.T2, Vm.T2
-USUBW  Vd.T1, Vn.T2, Vm.T2
 SMULL  Vd.Ta, Vn.Tb, Vm.Tb
 SMLAL  Vd.Ta, Vn.Tb, Vm.Tb
 SMLSL  Vd.Ta, Vn.Tb, Vm.Tb
