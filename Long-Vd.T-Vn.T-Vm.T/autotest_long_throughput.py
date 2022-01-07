@@ -7,9 +7,8 @@ if __name__ == "__main__":
         for line in FILEIN:
             INSTRUCTION.append(line.split(" ")[0])
     SHTYPE  = [("2S", "4S", "2D"), ("4H", "8H", "4S"), ("8B", "16B", "8H")]
-    OPTYPE = itertools.product(INSTRUCTION, SHTYPE)
 
-    for optype in OPTYPE:
+    for optype in itertools.product(INSTRUCTION, SHTYPE):
         # lower_part: 2D, 2S; 4S, 4H; 8H, 8B
         os.system(f"python3 generator_T.py {optype[0]} {optype[0]} {optype[1][2]} {optype[1][0]} > meta_T-{optype[0]}-{optype[1][2]}-{optype[1][0]}.S")
         os.system(f"make meta_T-{optype[0]}-{optype[1][2]}-{optype[1][0]}.bin")
@@ -19,7 +18,7 @@ if __name__ == "__main__":
     t = int(time.time())
     os.system(f'echo "" > RESULT{t}.txt')
     N = len(INSTRUCTION)*6
-    for i, optype in enumerate(OPTYPE):
+    for i, optype in enumerate(itertools.product(INSTRUCTION, SHTYPE)):
         execfile = f"./meta_T-{optype[0]}-{optype[1][2]}-{optype[1][0]}.bin"
         print(f"exec({2*i+1}/{N}): {execfile}")
         os.system(f"{execfile} >> RESULT{t}.txt")
