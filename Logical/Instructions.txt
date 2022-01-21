@@ -1,0 +1,5 @@
+AND  Vd.nB, Vn.nB, Vm.nB
+BIC  Vd.nB, Vn.nB, Vm.nB
+EOR  Vd.nB, Vn.nB, Vm.nB
+ORR  Vd.nB, Vn.nB, Vm.nB
+ORN  Vd.nB, Vn.nB, Vm.nB
