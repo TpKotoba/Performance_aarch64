@@ -1,0 +1,9 @@
+ABS    Vd.T, Vn.T
+NEG    Vd.T, Vn.T
+CLS    Vd.T, Vn.T
+CLZ    Vd.T, Vn.T
+CNT    Vd.T, Vn.T
+SQABS  Vd.T, Vn.T
+SQNEG  Vd.T, Vn.T
+USQADD Vd.T, Vn.T
+SUQADD Vd.T, Vn.T
