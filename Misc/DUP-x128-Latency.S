@@ -7,8 +7,8 @@
 #endif
 
     .macro core
-    DUP v8.4S, x0
-    ADD v8.4S, v8.4S, v8.4S
+    DUP v8.2D, x0
+    ADD v8.2D, v8.2D, v8.2D
     .endm
 
 target:
